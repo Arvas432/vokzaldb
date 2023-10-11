@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/body_background_grey"
+    >
+
+    <!--    <LinearLayout-->
+    <!--            android:id="@+id/upper"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_below="@id/upper"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginVertical="16sp"-->
+    <!--            android:layout_marginStart="16sp"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:fontFamily="@font/montserrat"-->
+    <!--            android:text="@string/heading_tablo"-->
+    <!--            android:textColor="@color/blue_500"-->
+    <!--            android:textSize="24sp" />-->
+
+    <!--            <Button-->
+    <!--                android:id="@+id/btn_schedule"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginVertical="16sp"-->
+    <!--                android:backgroundTint="@android:color/transparent"-->
+    <!--                android:onClick="goSchedule"-->
+    <!--                android:text="@string/heading_schedule"-->
+    <!--                android:textColor="#00796B" />-->
+
+    <!--        </LinearLayout>-->
+    <!--   -->
+    <!--    <LinearLayout-->
+    <!--            android:id="@+id/tabbar"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_below="@id/upper"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--            <Button-->
+    <!--                android:id="@+id/btn_fragment_internal"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:backgroundTint="@color/blue_700"-->
+    <!--                android:text="@string/departure"-->
+    <!--                android:textColor="@color/white"-->
+    <!--                />-->
+
+    <!--            <Button-->
+    <!--                android:id="@+id/btn_fragment_international"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:backgroundTint="@android:color/transparent"-->
+    <!--                android:text="@string/arrival"-->
+    <!--                android:textColor="@color/blue_700"-->
+    <!--                />-->
+    <!--        </LinearLayout>-->
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/heading"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@id/tabbar"-->
+    <!--        android:orientation="horizontal">-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="@string/tablo_table_list_item_today"-->
+
+    <!--            android:textSize="12sp"-->
+    <!--            android:textColor="@color/material_dynamic_neutral50"-->
+    <!--            android:fontFamily="@font/montserrat"-->
+    <!--            android:layout_marginStart="16sp"-->
+    <!--            android:layout_marginVertical="16sp"-->
+    <!--            android:layout_weight="1"/>-->
+    <!--    </LinearLayout>-->
+<!--    <androidx.fragment.app.FragmentContainerView-->
+<!--        android:id="@+id/fragment_container_view_tag"-->
+<!--        android:name="com.example.vokzaldb.ScheduleFragment"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        tools:layout="@layout/fragment_schedule"-->
+<!--        />-->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/body_background_grey"
+        tools:context="ScheduleFragment">
+
+
+        <LinearLayout
+            android:id="@+id/upper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/upper"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16sp"
+                android:layout_marginStart="16sp"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/heading_tablo"
+                android:textColor="@color/blue_500"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tabbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/upper"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_fragment_internal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/blue_700"
+                android:text="@string/departure"
+                android:textColor="@color/white"
+                />
+
+            <Button
+                android:id="@+id/btn_fragment_international"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/transparent"
+                android:text="@string/arrival"
+                android:textColor="@color/blue_700"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tabbar"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tablo_table_list_item_today"
+                android:id="@+id/CurrentDate"
+                android:fontFamily="@font/montserrat"
+                android:textSize="12sp"/>
+
+
+            <!--        <TextView-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:text="@string/tablo_table_list_item_today"-->
+            <!--            android:id="@+id/Date_textview"-->
+            <!--            android:textSize="12sp"-->
+            <!--            android:textColor="@color/material_dynamic_neutral50"-->
+            <!--            android:fontFamily="@font/montserrat"-->
+            <!--            android:layout_marginStart="16sp"-->
+            <!--            android:layout_marginVertical="16sp"-->
+            <!--           />-->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/buttonSave"
+                android:backgroundTint="@color/blue_700"
+                android:textColor="@color/white"
+                android:text="Сохранить посадочный талон"/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_tablo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/heading"></androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/bottombar_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_menu_home"
+            android:layout_width="64sp"
+            android:layout_height="64sp"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/transparent"
+            android:contentDescription="@string/heading_tablo"
+            android:scaleType="centerInside"
+            android:src="@drawable/boarding" />
+
+        <ImageButton
+            android:id="@+id/schedule_button"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/transparent"
+            android:contentDescription="@string/heading_register"
+            android:scaleType="centerInside"
+            android:src="@drawable/ticket_flight" />
+
+        <ImageButton
+            android:id="@+id/btn_menu_services"
+            android:layout_width="64sp"
+            android:layout_height="64sp"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/transparent"
+            android:contentDescription="@string/heading_services"
+
+            android:scaleType="centerInside"
+            android:src="@drawable/business_trip" />
+
+        <ImageButton
+            android:id="@+id/btn_menu_wiki"
+            android:layout_width="64sp"
+            android:layout_height="64sp"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/transparent"
+            android:contentDescription="@string/heading_wiki"
+            android:scaleType="centerInside"
+            android:src="@drawable/information" />
+
+
+
+
+
+        <ImageButton
+            android:id="@+id/btn_menu_more"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/transparent"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerInside"
+            android:src="@drawable/more_horiz_48px" />
+    </LinearLayout>
+
+</RelativeLayout>
