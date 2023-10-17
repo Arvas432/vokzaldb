@@ -21,7 +21,6 @@ class MainActivity: AppCompatActivity() {
         recyclerView.adapter = adapter
         recyclerView.layoutManager = LinearLayoutManager(this)
         trainsViewModel.allTrains.observe(this, Observer { trains ->
-            // Update the cached copy of the words in the adapter.
             trains?.let { adapter.submitList(it) }
         })
     }

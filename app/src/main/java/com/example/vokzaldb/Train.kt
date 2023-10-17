@@ -8,7 +8,7 @@ import androidx.room.PrimaryKey
 data class Train(
 
     @PrimaryKey(autoGenerate = true)
-    val id: Long,
+    @ColumnInfo(name = "id") val id: Long,
     @ColumnInfo(name = "origin") val origin: String,
     @ColumnInfo(name = "destination") val destination: String,
     @ColumnInfo(name = "time") val time: String,

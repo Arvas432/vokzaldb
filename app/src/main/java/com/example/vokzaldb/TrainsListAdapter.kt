@@ -24,7 +24,7 @@ class TrainsListAdapter : ListAdapter<Train, TrainsListAdapter.TrainViewHolder>(
         private val ItemOrigin: TextView = itemView.findViewById(R.id.table_text_view_origin)
         private val ItemDestination: TextView = itemView.findViewById(R.id.tablo_table_text_view_destination)
         private val ItemWay: TextView = itemView.findViewById(R.id.text_view_gate)
-        fun bind(id: Long, origin: String, destination: String, time: String, way: Int) {
+        fun bind(id: Long?, origin: String?, destination: String?, time: String?, way: Int?) {
             ItemTime.text = time
             ItemTrainId.text = id.toString()
             ItemOrigin.text = "Откуда: $origin"

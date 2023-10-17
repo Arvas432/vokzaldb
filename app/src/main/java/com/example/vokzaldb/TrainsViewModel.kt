@@ -11,7 +11,7 @@ class TrainsViewModel(private val repository: TrainRepository): ViewModel() {
 }
 class TrainsViewModelFactory(private val repository: TrainRepository) : ViewModelProvider.Factory {
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
-        if (modelClass.isAssignableFrom(TrainRepository::class.java)) {
+        if (modelClass.isAssignableFrom(TrainsViewModel::class.java)) {
             @Suppress("UNCHECKED_CAST")
             return TrainsViewModel(repository) as T
         }
