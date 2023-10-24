@@ -182,10 +182,11 @@
         </LinearLayout>
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycler_view_tablo"
+            android:id="@+id/recycler_view_trains_table"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/heading"></androidx.recyclerview.widget.RecyclerView>
+            android:layout_below="@+id/heading"
+            tools:listitem="@layout/tablo_table_list_item"></androidx.recyclerview.widget.RecyclerView>
 
     </RelativeLayout>
 

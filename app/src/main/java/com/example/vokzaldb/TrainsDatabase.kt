@@ -26,8 +26,6 @@ public abstract class TrainsDatabase : RoomDatabase(){
 
         suspend fun populateDatabase(trainDAO: TrainDAO) {
             trainDAO.deleteAll()
-            val train1 = Train(1,"Москва", "Можайск", "15:40",3)
-            trainDAO.insert(train1)
             trainDAO.insert(Train(1,"Москва", "Можайск", "15:40",1))
             trainDAO.insert(Train(2,"Москва", "Подольск", "15:50",3))
             trainDAO.insert(Train(3,"Подольск", "Москва", "16:10",6))

@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 
-class TrainsListAdapter : ListAdapter<Train, TrainsListAdapter.TrainViewHolder>(TrainsComparator()){
+class TrainsListAdapter : ListAdapter<Train, TrainsListAdapter.TrainViewHolder>(TrainsComparator()) {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TrainViewHolder {
         return TrainViewHolder.create(parent)
     }
